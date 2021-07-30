@@ -1,0 +1,140 @@
+body {
+  background-image: url(Black\ Background\ Leather\ Wallpaper\ 2560x1440\ pixel\ Hd\ Wallpaper.jpg);
+  display: flex;
+  flex-direction: column;
+  font-family: Archivo, sans-serif;
+  color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 10px;
+  }
+
+  .header li {
+    display: inline;
+    position: relative;
+    margin-left: 5px;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a:hover {
+    color: #ffd000;
+  }
+
+
+form {
+    /* Centralizar o form na página*/
+    width: 30%;
+    align-self: center;
+    margin: 50px;
+    /*Bordas no Form*/
+    padding: 1em;
+    border-radius: 1em;
+    /*Cor do Background do formulário*/
+    background-color: #fff;
+    color: black;
+    /*Sombra do Formulário*/
+    box-shadow: -7px 10px 5px rgb(255, 238, 86);
+}
+
+form h2, p{
+  text-align: center;
+  font-size: 25px;
+}
+
+.market h1 {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.market h2 {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+input#nome, input#email, input#telefone, input#data, select#objetivo {
+  font-family: Archivo, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 90%;
+  color: #0B0B0B;
+  background-color: rgba(214, 214, 214, 0.3);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 12px;
+  box-shadow: -3px 2px 5px #CCC;
+}
+
+button {
+  font-size: 21px;
+  color: black;
+  padding: 12px;
+  margin: 15px;
+  border: 2px solid #ffd000;
+  transition: 500ms;
+  border-radius: 15px;
+  background-color: #ffd000;
+  text-align: center;
+}
+
+.subscribeBtn {
+  padding: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #FFF;
+  color: #ffd000;
+}
+
+select option {
+  color: black;
+  position: relative;
+  font-family: Archivo, sans-serif;
+}
+
+.foot {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.nome:hover {
+  color: #ffd000;
+}
+
+.you {
+  text-decoration: underline #ffd000;
+}
+.you:hover {
+  color: #ffd000;
+}
+
+.love:hover {
+  color: red;
+}
+
+.resilia:hover {
+  color: #ffd000;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6c4ce69ca.js" crossorigin="anonymous"></script>
+    <title>Resilia | Aprenda programação em 6 meses com a gente!</title>
+
+    <script>
+        /* Máscaras ER */
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('telefone').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+    </script>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.resilia.work"><img src="https://inscricoes.resilia.dev/wp-content/themes/resilia/media/resilia-logo/resilia-logo.svg" alt="resilia-logo"></a>
+        <nav>
+            <div class="icons">
+            <ul>
+                <li><a href="https://br.linkedin.com/school/resilia-educacao/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://resilia.medium.com/"><i class="fab fa-medium"></i></a></li>
+                <li><a href="https://www.facebook.com/resilia.br/"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/resilia.br/?hl=pt-br"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="market">
+        <h1>O mercado está buscando pessoas desenvolvedoras e <span class="you">VOCÊ</span> pode preencher essas vagas!</h1>
+        <h2>Em 6 meses, aprenda programação DE VERDADE e de forma mais rápida e acessível para começar a trabalhar com tecnologia.</h2>
+    </div>
+
+    <form action="index.html" method="POST">
+        <h2>Inscrições Abertas! =D</h2> <br>
+        <p>Preencha seus dados!</p>
+        <br>
+        <div>
+            <label for="nome">Nome Completo</label> <br>
+            <input type="text" id="nome" placeholder="Ada Lovelace">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail (Você usará o mesmo durante todo o processo)</label> <br>
+            <input type="email" id="email" placeholder="ada.lovelace@resilia.br">
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Celular/Whatsapp</label>
+        <br>
+            <input type="text" name="telefone" id="telefone" placeholder="(21) 99999-9999" maxlength="15"/>
+        </div>
+        <br>
+        <div>
+            <label for="nascimento">Data de Nascimento</label>
+        <br>
+            <input type="date" id="data" placeholder="Data de nascimento">
+        </div>
+        <br>
+        <div>
+            <label for="objetivo">Objetivo</label> <br>
+            <select name="objetivo-select" id="objetivo">
+                <option selected disable value="">Selecione um objetivo</option>
+                <option value="Conseguir um Emprego">Conseguir um emprego</option>
+                <option value="Mudar de carreira">Mudar de carreira</option>
+                <option value="Aprender programação">Aprender programação</option>
+                <option value="Aprender Soft Skills">Aprender Soft Skills</option>
+                <option value="Ter mentoria profissional">Ter mentoria profissional</option>
+                <option value="Acesso à comunidade de programadores">Acesso à comunidade de programadores</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        <div class="subscribeBtn">
+            <button type="submit">Inscreva-se!</button>
+        </div>
+    </form>
+    
+        <div class="foot">
+            <footer>
+               <h3>Feito com <span class="love">❤</span> por <br><span class="nome">Vinicius Ribeiro</span><br>Site feito com propósitos educacionais.<br><span class="resilia">Resilia<br>©2021</span></h3>
+             </footer>
+        </div>
+</body>
+</html>
